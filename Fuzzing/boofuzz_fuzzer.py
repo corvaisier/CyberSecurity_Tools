@@ -1,6 +1,8 @@
 #!usr/bin/env python3
 
-#used to practice fuzzing and vulnerability researches/exploits in vulnserver
+# used to practice fuzzing and vulnerability researches/exploits in vulnserver
+# usefull to found vulnerabilities and what type of characters create crash but not to determinate how many characters will create the crash 
+# basic_fuzzer.py could determinate lenght of input
 
 from boofuzz import *
 
