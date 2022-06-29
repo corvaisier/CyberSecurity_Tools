@@ -1,4 +1,4 @@
-#!/bin/sh
+##!/bin/sh
 
 #https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
 #need to pass in .sh
