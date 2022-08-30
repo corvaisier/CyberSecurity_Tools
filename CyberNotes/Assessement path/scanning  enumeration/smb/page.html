@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>smb</title>
+</head><body>port 139<br/>
+<br/>
+Avec metasploit pour trouver la version exemple<br/>
+=&gt; msfconsole<br/>
+&nbsp; -&gt; search smb <br/>
+&nbsp; &nbsp; -&gt; /auxiliary/scanner/smb version<br/>
+&nbsp; &nbsp; -&gt; use 60 <br/>
+&nbsp; &nbsp; -&gt; info<br/>
+&nbsp; &nbsp; -&gt; option<br/>
+&nbsp; &nbsp; -&gt; set rhost (target) &lt;IP&gt;<br/>
+&nbsp; &nbsp; -&gt; run<br/>
+<br/>
+<br/>
+ou en cli<br/>
+smbclient -L \\\\&lt;IP&gt;\\ <br/>
+=&gt; on peut voir les dossiers<br/>
+refaire sans -L <br/>
+smbclient &nbsp;\\\\&lt;IP&gt;\\&lt;nom du dossier&gt; </body></html>
