@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Spiking</title>
+</head><body>Outil : <br/>
+generic_send_tcp<br/>
+<br/>
+script : <br/>
+<br/>
+s_readline();<br/>
+s_string("&lt;nom de la commande&gt;");<br/>
+s_string_variable("0");<br/>
+<br/>
+Le lancer en cli : <br/>
+generic_send_tcp &lt;ip target&gt; &lt;port&gt;<br/>
+<br/>
+Si vulnérable : il y aura un message de type "Violation", Immunity debugger plantera.<br/>
+En regardant l'écran à droite en haut, on pourra voir dans l'ESP des caractères comme dans l'EIP, le registre cible.</body></html>

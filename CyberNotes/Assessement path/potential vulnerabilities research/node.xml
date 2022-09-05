@@ -2,7 +2,7 @@
 <node>
 <version>6</version>
 <dict>
-  <key>expanded</key><true/>
+  <key>expanded</key><false/>
   <key>title</key><string>potential vulnerabilities research</string>
   <key>nodeid</key><string>f657a023-b678-4453-a24a-d5e944aefdf9</string>
   <key>modified_time</key><integer>1661876378</integer>

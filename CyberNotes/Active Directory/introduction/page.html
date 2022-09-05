@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introduction</title>
+</head><body>Active Directory : <br/>
+<br/>
+Annuaire de tous les machines : Imprimantes.... <br/>
+Tout est objet : tel qu'un ordinateur, personne.. <br/>
+Tout ce qui est authentification passe par Kerberos<br/>
+<br/>
+Les composants physiques : <br/>
+Domain Controller =&gt; beaucoup de rôles. Il héberge l'annuaire, il gère l'authentification et l'autorisation. <ul><li style="list-style-type: none">Il réplique d'autres controlleurs de domaine, et il a un accès pour l'administration. </li>
+</ul>
+AD DS data store =&gt; il contient toute la base de donnée du controlleur de domaine, avec toutes les informations des utilisateurs, services...<br/>
+<br/>
+Les composants logiques : <br/>
+AD DS schema =&gt; Définit tous les objets possibles qui peuvent être stockés dans l'AD, et définit les règles de configuraton. <br/>
+Domains =&gt; La façon de grouper les objets entre eux. Il peut n'y avoir qu'un domaine pour des petits commerces. Chaque domaine a son Domain Controller. <br/>
+Trees =&gt; Il est composé de plusieurs domaines, il peut ^avoir un Domain parent, et plusieurs domaines enfants. Ils ont un lien de confiance entre eux.<br/>
+Forests =&gt; Une collection de plusieurs Trees. <br/>
+Organizational Units (Ous) =&gt; une unité d'organisation<br/>
+Trusts =&gt; C'est le mecanisme qui permet d'accorder l'acces à des ressources pour un autre domaine. Il peut être directionnel ou multidirectionnel<br/>
+Objects =&gt; A l'interieur d'un Ous, Ce peut être un utilisateur, une imprimante ou un ordinateur. &nbsp;</body></html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Introduction</title>
+</head><body>mémoire simplifiée : <br/>
+<br/>
+Kernel <br/>
+Stack<br/>
+Heap<br/>
+Data<br/>
+Text<br/>
+<br/>
+Dans la Stack différents registres : <br/>
+ESP (Extended Stack Pointer)<br/>
+Buffer space<br/>
+EBP (Extended Base Pointer)<br/>
+EIP (Extended Instruction Pointer) / Return address <br/>
+<br/>
+Si buffer overflow attack : être caapble de déborder sur buffer space, de l'EBP pour écrire sur le EIP qui retourne des adresses donc lui demander de retourner sur un reverse shell. <br/>
+<br/>
+Plusieurs étapes : <br/>
+1 - Spiking : Trouver si le programme est vulnérable<br/>
+2 - Fuzzing, autre méthode similaire<br/>
+3 - Trouver l'offset<br/>
+4 - Réécrire le EIP<br/>
+5 - Trouver les caractères interdits<br/>
+6 - Trouver le bon module<br/>
+7 - Générer un shellcode<br/>
+8 - Root ! </body></html>
